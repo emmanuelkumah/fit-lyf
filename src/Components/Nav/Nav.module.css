@@ -1,0 +1,78 @@
+.navBrand {
+  display: flex;
+  flex-direction: row;
+}
+.navBrand > span {
+  font-size: 2rem;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+.innerNavBrand {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 2rem;
+}
+.innerNavBrand > h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.logo_brand {
+  font-weight: 200;
+}
+.gym_icon-main,
+.gym_icon_sideNav {
+  font-size: 2rem;
+  position: relative;
+}
+.gym_icon-main {
+  top: 25px;
+}
+.gym_icon_sideNav {
+  top: 30px;
+  color: #fff;
+}
+.openIcon {
+  font-size: 2rem;
+  position: relative;
+  top: 25px;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+.close_icon {
+  color: #fff;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+.close_icon:hover,
+.close_icon:active {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+ul {
+  list-style-type: none;
+}
+ul > li {
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 1rem 0rem;
+}
+
+.sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--sec-color);
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: 0.6s;
+}
+
+.sideNavOpen {
+  width: 230px;
+}
