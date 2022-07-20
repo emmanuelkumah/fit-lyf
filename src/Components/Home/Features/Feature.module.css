@@ -1,0 +1,81 @@
+.exercise_sec {
+  position: absolute;
+  bottom: -10%;
+}
+.exercise_sec > h3 {
+  border-left: 1px solid var(--sec-color);
+  padding-left: 1rem;
+}
+.exercises_container {
+  display: flex;
+  gap: 4rem;
+}
+.exercise_content {
+  display: flex;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+.exercise_icon {
+  font-size: 3rem;
+  margin-right: 1.4rem;
+  position: relative;
+  top: 10px;
+  color: var(--sec-color);
+}
+.exercise_details > p {
+  font-size: 0.8rem;
+}
+.exercise_details > p:nth-child(1) {
+  font-size: 1.3rem;
+  margin: 0;
+}
+.exercise_details > p:nth-last-of-type(2) {
+  margin: 0;
+}
+
+.features_container {
+  position: relative;
+  top: 100px;
+}
+.features_row {
+  display: flex;
+}
+.feature_col {
+  width: 50%;
+}
+.feature_blob {
+  width: 400px;
+  height: 400px;
+  border-radius: 20%;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  background-color: var(--sec-color);
+  filter: blur(90px);
+  z-index: -10;
+}
+.feature_caption {
+  font-size: 2rem;
+  border-top: 2px dashed var(--sec-color);
+  border-bottom: 2px dashed var(--sec-color);
+  width: fit-content;
+}
+.feature_caption > span {
+  color: var(--sec-color);
+}
+.feature_insp {
+  display: flex;
+  gap: 3rem;
+}
+.feature_insp > div > h4 {
+  font-size: 1.5rem;
+  color: var(--sec-color);
+  font-family: "Edu VIC WA NT Beginner", cursive;
+}
+.feature_insp-content {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+}
