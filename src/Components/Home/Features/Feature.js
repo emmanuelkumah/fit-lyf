@@ -44,7 +44,9 @@ const Feature = () => {
         <section className={classes["features_row"]}>
           <div className={classes["feature_col"]}>
             <div className={classes["feature_blob"]}></div>
-            <p>Join professional trainers </p>
+            <p className={classes["feature_pro"]}>
+              Join professional trainers{" "}
+            </p>
             <img src={featureImg} alt="featureImg" />
           </div>
           <div className={classes["feature_col"]}>
