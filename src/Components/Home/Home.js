@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { CircleArrow as ScrollUpButton } from "react-scroll-up-button";
 import { NavContext } from "../Context";
 import NavBrand from "../Nav/NavBrand";
 import Feature from "./Features/Feature";
@@ -17,6 +18,7 @@ const Home = () => {
         <Feature />
         <Testimonials />
         <Footer />
+        <ScrollUpButton />
       </NavContext.Provider>
     </>
   );
