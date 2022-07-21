@@ -44,15 +44,18 @@ const Feature = () => {
         <section className={classes["features_row"]}>
           <div className={classes["feature_col"]}>
             <div className={classes["feature_blob"]}></div>
-            <p className={classes["feature_pro"]}>
-              Join professional trainers{" "}
-            </p>
-            <img src={featureImg} alt="featureImg" />
+            <p className={classes["feature_pro"]}>Exercise with experts </p>
+            <img
+              src={featureImg}
+              alt="featureImg"
+              className={classes["feature_img"]}
+            />
           </div>
           <div className={classes["feature_col"]}>
             <section>
               <h3 className={classes["feature_caption"]}>
-                Exercises, made for you. Ready to make a <span>change </span>?
+                More than 1000 exercises to choose from. Ready to be{" "}
+                <span>fit </span>?
               </h3>
               <div className={classes["feature_insp"]}>
                 <div>

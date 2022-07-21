@@ -39,6 +39,17 @@ const Hero = () => {
           </div>
         </section>
         <section className={classes["hero_col"]}>
+          <div className={classes["stats_container"]}>
+            <p>
+              <span>45 </span>expert trainers
+            </p>
+            <p>
+              <span>240K</span> exercises
+            </p>
+            <p>
+              <span>2.5mil+ </span>monthly views
+            </p>
+          </div>
           <div className={classes["hero_container"]}>
             <img src={heroImg} alt="hero" />
             <img
@@ -59,17 +70,7 @@ const Hero = () => {
               </p>
             </div>
           </div>
-          <div className={classes["stats_container"]}>
-            <p>
-              <span>45 </span>expert trainers
-            </p>
-            <p>
-              <span>240K</span> exercises
-            </p>
-            <p>
-              <span>2.5mil+ </span>monthly views
-            </p>
-          </div>
+
           <div className={classes["blob_img"]}></div>
         </section>
       </div>

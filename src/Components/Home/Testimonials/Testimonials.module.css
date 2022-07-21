@@ -14,10 +14,12 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--sec-color);
+  margin-bottom: 2rem;
 }
 .testimonial_heading > h3 {
   text-align: center;
   font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 .review {
   background-color: #fff;
@@ -44,4 +46,12 @@
   height: 80px;
   border-radius: 50%;
   margin: 0 auto;
+}
+@media only screen and (max-width: 600px) {
+  .testimonial_sec {
+    border: 1px solid green;
+  }
+  .testimonial_review-sec {
+    flex-direction: column;
+  }
 }

@@ -42,6 +42,7 @@
   justify-content: center;
   gap: 3rem;
   font-size: 1.3rem;
+  padding-bottom: 1.5rem;
 }
 
 footer {
@@ -49,4 +50,24 @@ footer {
 }
 footer > p {
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer_subscription_row {
+    flex-direction: column;
+  }
+  .footer_col {
+    width: 100%;
+  }
+  .footer_col > h4 {
+    padding-right: 0;
+  }
+  .footer_col > input[type="text"] {
+    width: 90%;
+  }
+  .footer_col > button {
+    width: 95%;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 }

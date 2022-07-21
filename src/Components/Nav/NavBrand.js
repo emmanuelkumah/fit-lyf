@@ -15,8 +15,9 @@ function NavBrand() {
     <>
       <div className={classes.navBrand}>
         <AiOutlineMenuFold className={classes.openIcon} onClick={openNavMenu} />
-        <CgGym className={classes["gym_icon-main"]} />
+
         <h1>
+          <CgGym className={classes["gym_icon-main"]} />
           Fit <span className={classes["logo_brand"]}>Lyf</span>
         </h1>
       </div>
