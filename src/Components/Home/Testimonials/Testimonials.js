@@ -11,7 +11,7 @@ const Testimonials = () => {
 
   return (
     <>
-      <section className={classes["testimonails_container"]}>
+      <section className={classes["testimonials_container"]}>
         <div className={classes["testimonial_sec"]}>
           <div className={classes["testimonial_heading"]}>
             <h5>Testimonials</h5>

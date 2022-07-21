@@ -43,6 +43,7 @@
 }
 .features_row {
   display: flex;
+  flex-wrap: wrap;
 }
 .feature_col {
   width: 50%;
@@ -97,7 +98,6 @@
 
 @media only screen and (max-width: 600px) {
   .exercise_sec {
-    /* display: none; */
     position: relative;
   }
   .exercises_container {
@@ -105,16 +105,21 @@
     flex-direction: column;
     gap: 1rem;
   }
-  .features_row {
+  .features_container {
+    display: flex;
     flex-direction: column;
-    border: 1px solid blue;
+    position: relative;
+    top: 100px;
   }
+
   .feature_col {
     width: 100%;
   }
   .feature_img {
-    position: relative;
-    right: 91%;
+    position: absolute;
+    right: 15%;
+    top: -25%;
+    width: 100%;
   }
   .feature_blob {
     top: -7%;
@@ -126,6 +131,9 @@
   .feature_pro {
     z-index: 1;
     border-bottom: 2px solid var(--sec-color);
+    position: relative;
+    margin-top: 2rem;
+    bottom: 50px;
   }
   .feature_insp {
     flex-direction: column;
@@ -133,5 +141,34 @@
   }
   .feature_insp > div > h4 {
     margin: 0;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .exercise_sec {
+    position: relative;
+  }
+  .exercises_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .features_container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .feature_col {
+    width: 100%;
+  }
+  .feature_col_content {
+    position: relative;
+    bottom: -80%;
+  }
+  .feature_img {
+    position: absolute;
+    right: 15%;
+    top: -25%;
+    width: 100%;
   }
 }

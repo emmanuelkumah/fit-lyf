@@ -8,6 +8,9 @@
 .footer_col {
   width: 50%;
 }
+hr {
+  margin-top: 1rem;
+}
 .footer_col > h4 {
   font-size: 1.4rem;
   margin-bottom: 0;
@@ -55,18 +58,47 @@ footer > p {
 @media only screen and (max-width: 600px) {
   .footer_subscription_row {
     flex-direction: column;
+    margin-top: 2rem;
   }
   .footer_col {
     width: 100%;
   }
   .footer_col > h4 {
     padding-right: 0;
+    margin-bottom: 1rem;
+  }
+  hr {
+    margin-top: 1rem;
   }
   .footer_col > input[type="text"] {
-    width: 90%;
+    width: 100%;
   }
   .footer_col > button {
-    width: 95%;
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .footer_subscription_row {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .footer_col {
+    width: 100%;
+  }
+  hr {
+    margin-top: 1rem;
+  }
+  .footer_col > h4 {
+    padding-right: 0;
+    margin-bottom: 1rem;
+  }
+  .footer_col > input[type="text"] {
+    width: 100%;
+  }
+  .footer_col > button {
+    width: 100%;
     margin-top: 1rem;
     margin-left: 0;
   }

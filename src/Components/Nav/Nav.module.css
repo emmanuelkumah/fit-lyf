@@ -57,7 +57,7 @@ ul {
 ul > li {
   font-size: 1.4rem;
   color: #fff;
-  margin: 0.5rem 0rem;
+  margin: 0.5rem 2rem;
 }
 
 .sideNav {
@@ -71,8 +71,15 @@ ul > li {
   overflow-x: hidden;
   padding-top: 10px;
   transition: all 0.6s ease-in;
+  border-bottom-right-radius: 40px;
 }
 
 .sideNavOpen {
   width: 230px;
+}
+@media only screen and (max-width: 600px) {
+  .gym_icon_sideNav {
+    top: 10px;
+    color: #fff;
+  }
 }

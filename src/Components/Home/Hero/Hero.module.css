@@ -159,6 +159,12 @@
   .hero_col {
     width: 100%;
   }
+  .hero_shift {
+    margin-left: 0px;
+  }
+  .hero_content {
+    padding-top: 0.5rem;
+  }
   .hero_content > h2 {
     padding-right: 0;
     line-height: 1.1;
@@ -170,11 +176,8 @@
   .stats_container {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
   }
-  .hero_container {
-    margin-top: 2rem;
-  }
+
   .heartRate {
     right: -2%;
     top: 200px;
@@ -185,6 +188,45 @@
     left: -2%;
   }
   .blob_img {
-    /* display: none; */
+    position: absolute;
+    top: 60%;
+    width: 15rem;
+    height: 12rem;
+    filter: blur(102px);
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .hero_container {
+    flex-direction: column;
+  }
+  .hero_col {
+    width: 100%;
+  }
+  .hero_content > h2 {
+    padding-right: 0;
+    line-height: 1.1;
+    margin: 0;
+  }
+  .hero_content > p {
+    padding-right: 0;
+  }
+  .blob_img {
+    position: absolute;
+    top: 60%;
+    width: 25rem;
+    height: 12rem;
+    filter: blur(102px);
+  }
+  .heartRate {
+    right: -2%;
+    top: 70%;
+    width: fit-content;
+  }
+  .dumbBells {
+    width: fit-content;
+    left: -2%;
+  }
+  .hero_shift {
+    margin-left: 0px;
   }
 }

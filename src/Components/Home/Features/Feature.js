@@ -52,7 +52,7 @@ const Feature = () => {
             />
           </div>
           <div className={classes["feature_col"]}>
-            <section>
+            <section className={classes["feature_col_content"]}>
               <h3 className={classes["feature_caption"]}>
                 More than 1000 exercises to choose from. Ready to be{" "}
                 <span>fit </span>?

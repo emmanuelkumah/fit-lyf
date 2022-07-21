@@ -1,4 +1,4 @@
-.testimonial_container {
+.testimonials_container {
   position: relative;
 }
 .testimonial_sec {
@@ -48,8 +48,19 @@
   margin: 0 auto;
 }
 @media only screen and (max-width: 600px) {
-  .testimonial_sec {
-    border: 1px solid green;
+  .testimonials_container {
+    margin-top: 2rem;
+  }
+  .testimonial_heading > h5 {
+    margin-bottom: 0;
+  }
+  .testimonial_review-sec {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .testimonials_container {
+    margin-top: 16rem;
   }
   .testimonial_review-sec {
     flex-direction: column;

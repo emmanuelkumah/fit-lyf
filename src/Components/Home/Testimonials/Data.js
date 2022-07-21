@@ -17,7 +17,7 @@ const testimonials = [
     title: "Communication expert",
     img: img3,
     review:
-      "Due to my busy schedules i am not able to visit the gym regularly, but now with fit Lyf i can do exercise even at home",
+      "As a communication expert, i do a lot of standing which is affecting my posture, now with fitLyf  i can do exercise even at home",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const testimonials = [
     title: "Frontend developer",
     img: img2,
     review:
-      "Due to my busy schedules i am not able to visit the gym regularly, but now with fit Lyf i can do exercise even at home",
+      "My posture and sitting habits have improved since i started visiting this website and do some anterior pelvic execises to strenghthen my back",
   },
 ];
 
