@@ -1,0 +1,53 @@
+/* Body Parts Section */
+::-webkit-scrollbar {
+  width: 10px;
+  border: 2px solid white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--sec-color);
+}
+::-webkit-scrollbar-track {
+  background-color: #bbbbbb;
+}
+
+.bodyParts_container {
+}
+.bodyParts_list {
+  overflow-x: scroll;
+  width: 50vw;
+  margin: 2rem auto;
+}
+.bodyParts_list > ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.bodyParts_list > ul > li {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  font-size: 1rem;
+  padding: 0rem 1rem;
+  border-radius: 5px;
+}
+/* Exercises */
+.exercises_lists_container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.single-exercise-card {
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+.exercise-link > p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--sec-color);
+  text-transform: capitalize;
+  padding: 1rem 0.5rem;
+}
