@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { fetchData, exerciseOptions } from "../../utils/fetchData";
 import classes from "./Exercises.module.css";
+import { ScrollMenu } from "react-horizontal-scrolling-menu";
 
-const ExercisesBodyParts = () => {
+const ExercisesBodyParts = ({ setSelectBodyPart }) => {
   const [bodyParts, setBodyParts] = useState([]);
+
+  const getBodyPart = (item) => {
+    setSelectBodyPart(item);
+  };
   useEffect(() => {
     const fetchBodyParts = async () => {
       const bodyPartsData = await fetchData(
@@ -15,17 +20,24 @@ const ExercisesBodyParts = () => {
     };
     fetchBodyParts();
   }, []);
-  console.log(bodyParts);
+
   const bodyPartList = bodyParts.map((part, index) => (
-    <li key={index}>{part}</li>
+    <li
+      key={index}
+      onClick={() => getBodyPart(part)}
+      className={classes["bodyPart-item"]}
+    >
+      {part}
+    </li>
   ));
   return (
     <>
       <section className={classes["bodyParts_container"]}>
-        <h2>Body PArts</h2>
-        <div className={classes["bodyParts_list"]}>
-          <ul>{bodyPartList}</ul>
-        </div>
+        <h2>Body Parts</h2>
+
+        <ScrollMenu>
+          <ul className={classes["bodyParts"]}>{bodyPartList}</ul>
+        </ScrollMenu>
       </section>
     </>
   );
