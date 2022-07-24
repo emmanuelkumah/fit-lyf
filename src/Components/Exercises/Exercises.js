@@ -15,7 +15,7 @@ const Exercises = () => {
   useEffect(() => {
     const fetchExercisesData = async () => {
       let exerciseData = [];
-      if (selectBodyPart === "all") {
+      if (selectBodyPart === "all" || selectBodyPart === "") {
         exerciseData = await fetchData(
           "https://exercisedb.p.rapidapi.com/exercises",
           exerciseOptions
@@ -26,7 +26,8 @@ const Exercises = () => {
           exerciseOptions
         );
       }
-      console.log("selected body", exerciseData);
+
+      setExercises(exerciseData);
     };
 
     fetchExercisesData();
@@ -34,12 +35,12 @@ const Exercises = () => {
 
   const indexOfLastExercise = currentPage * exercisePerPage;
   const indexOfFirstExercise = indexOfLastExercise - exercisePerPage;
+
   const currentExercise = exercises.slice(
     indexOfFirstExercise,
     indexOfLastExercise
   );
 
-  console.log("selected", selectBodyPart);
   //paginate
   const paginate = (event, value) => {
     setCurrentPage(value);
