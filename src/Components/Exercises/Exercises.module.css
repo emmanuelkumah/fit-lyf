@@ -23,6 +23,7 @@
   padding: 0rem 1rem;
   border-radius: 5px;
   color: #fff;
+  gap: 1rem;
 }
 .bodyParts > li:hover,
 .bodyParts > li:active {
@@ -213,10 +214,27 @@ a {
     /* max-height: 200px; */
     width: 100%;
   }
-  .single-exercise-card {
-    /* width: 90vw; */
-  }
+
   .single_gif {
     width: 90%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  .exerciseDetail-row {
+    flex-direction: column;
+  }
+  .exerciseDetail-col {
+    width: 100%;
+  }
+  .exerciseDetails-img {
+    width: 100%;
+  }
+  .exercise_videos {
+    flex-direction: column;
+  }
+
+  .exercise_vid_img {
+    width: 100%;
+    max-height: auto;
   }
 }
