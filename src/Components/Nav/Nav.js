@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { NavContext } from "../Context";
-
+import { HashLink as Link } from "react-router-hash-link";
 import classes from "./Nav.module.css";
 import { AiOutlineCloseSquare } from "react-icons/ai";
 import { CgGym } from "react-icons/cg";
@@ -33,9 +33,16 @@ function Nav() {
         </div>
 
         <ul classsName={classes["nav_menus"]}>
-          <li>Home</li>
-          <li>Services</li>
-          <li>Subscribe</li>
+          <Link to="#home" smooth className={classes["navLinks"]}>
+            <li>Home</li>
+          </Link>
+          <Link to="#features" smooth className={classes["navLinks"]}>
+            <li>Features</li>
+          </Link>
+          <Link to="#testimonials" smooth className={classes["navLinks"]}>
+            {" "}
+            <li>Testimonials</li>
+          </Link>
         </ul>
       </nav>
     </>

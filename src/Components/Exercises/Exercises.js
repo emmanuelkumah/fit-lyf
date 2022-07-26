@@ -6,16 +6,19 @@ import SingleExercise from "./SingleExercise";
 import Pagination from "@mui/material/Pagination";
 import { fetchData, exerciseOptions } from "../../utils/fetchData";
 import Logo from "../Nav/Logo";
+import { Oval } from "react-loader-spinner";
 
 const Exercises = () => {
   const [exercises, setExercises] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [selectBodyPart, setSelectBodyPart] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
   const exercisePerPage = 9;
 
   useEffect(() => {
     const fetchExercisesData = async () => {
       let exerciseData = [];
+
       if (selectBodyPart === "all" || selectBodyPart === "") {
         exerciseData = await fetchData(
           "https://exercisedb.p.rapidapi.com/exercises",
@@ -29,6 +32,8 @@ const Exercises = () => {
       }
 
       setExercises(exerciseData);
+      //stop loading
+      setIsLoading(false);
     };
 
     fetchExercisesData();
@@ -60,7 +65,8 @@ const Exercises = () => {
       <ExercisesBodyParts setSelectBodyPart={setSelectBodyPart} />
       <section>
         <div className={classes["exercises_lists_container"]}>
-          {currentExercisesLists}
+          {isLoading ? <Oval color="#cc2936" /> : currentExercisesLists}
+          {/* {currentExercisesLists} */}
           {exercises.length > 9 && (
             <Pagination
               color="standard"

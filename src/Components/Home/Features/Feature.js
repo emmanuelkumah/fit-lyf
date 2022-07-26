@@ -7,7 +7,7 @@ import featureImg from "../../../assets/gymImg2.png";
 const Feature = () => {
   return (
     <>
-      <section className={classes["exercise_sec"]}>
+      <section className={classes["exercise_sec"]} id="features">
         <h3>Popular Exercises</h3>
         <div className={classes["exercises_container"]}>
           <div className={classes["exercise_content"]}>

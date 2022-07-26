@@ -1,6 +1,6 @@
 import React from "react";
-import { BsFacebook, BsInstagram, BsSnapchat, BsTwitter } from "react-icons/bs";
 import classes from "./Footer.module.css";
+import FooterSocials from "./FooterSocials";
 
 const Footer = () => {
   return (
@@ -19,16 +19,7 @@ const Footer = () => {
             <button>Subscribe</button>
           </div>
         </div>
-        <hr />
-        <footer>
-          <p>All rights reserved</p>
-          <div className={classes["footer_icons"]}>
-            <BsFacebook />
-            <BsTwitter />
-            <BsInstagram />
-            <BsSnapchat />
-          </div>
-        </footer>
+        <FooterSocials />
       </section>
     </>
   );

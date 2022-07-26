@@ -118,7 +118,7 @@
   .feature_img {
     position: absolute;
     right: 15%;
-    top: -25%;
+    top: -35%;
     width: 100%;
   }
   .feature_blob {
@@ -129,11 +129,7 @@
     height: 50%;
   }
   .feature_pro {
-    z-index: 1;
-    border-bottom: 2px solid var(--sec-color);
-    position: relative;
-    margin-top: 2rem;
-    bottom: 50px;
+    display: none;
   }
   .feature_insp {
     flex-direction: column;

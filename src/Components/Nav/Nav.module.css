@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: row;
 }
-
+.navLogo {
+  color: var(--sec-color);
+}
 .navBrand > span {
   font-size: 2rem;
   margin-left: 1rem;
@@ -26,11 +28,9 @@
   font-size: 2rem;
   position: relative;
 }
-.gym_icon-main {
-  /* top: 25px; */
-}
+
 .gym_icon_sideNav {
-  top: 30px;
+  top: 10px;
   color: #fff;
 }
 .openIcon {
@@ -53,13 +53,20 @@
 }
 ul {
   list-style-type: none;
+  margin-left: 2rem;
+  font-size: 1.3rem;
 }
-ul > li {
-  font-size: 1.4rem;
+ul > li > {
+  /* margin: 0.5rem 2rem; */
   color: #fff;
-  margin: 0.5rem 2rem;
 }
-
+.navLinks {
+  color: #fff;
+}
+.navLinks:hover,
+.navLinks:active {
+  color: var(--primary-color);
+}
 .sideNav {
   height: 50vh;
   width: 0;

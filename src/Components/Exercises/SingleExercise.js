@@ -9,7 +9,12 @@ const SingleExercise = ({ exercise }) => {
         to={`/exercises/${exercise.id}`}
         className={classes["exercise-link"]}
       >
-        <img src={exercise.gifUrl} alt={exercise.name} loading="lazy" />
+        <img
+          src={exercise.gifUrl}
+          alt={exercise.name}
+          loading="lazy"
+          className={classes["single_gif"]}
+        />
         <p className={classes["single-exercise-name"]}>{exercise.name}</p>
       </Link>
     </div>

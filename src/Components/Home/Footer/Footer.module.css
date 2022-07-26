@@ -9,7 +9,7 @@
   width: 50%;
 }
 hr {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .footer_col > h4 {
   font-size: 1.4rem;
@@ -45,11 +45,11 @@ hr {
   justify-content: center;
   gap: 3rem;
   font-size: 1.3rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 footer {
-  margin: 2rem 0rem;
+  margin: 1rem 0rem;
 }
 footer > p {
   text-align: center;

@@ -22,6 +22,7 @@
   font-size: 1rem;
   padding: 0rem 1rem;
   border-radius: 5px;
+  color: #fff;
 }
 .bodyParts > li:hover,
 .bodyParts > li:active {
@@ -36,6 +37,7 @@
   gap: 2rem;
   flex-wrap: wrap;
 }
+
 .single-exercise-card {
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -66,7 +68,7 @@ a {
 .exerciseDetails-img {
   width: 80%;
   border-radius: 20px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(8, 17, 26, 0.2) 0px 8px 24px;
 }
 .exerciseDetail-heading {
   font-size: 2.5rem;
@@ -137,8 +139,7 @@ a {
 }
 
 /* SearchExercises */
-.searchExercise_container {
-}
+
 .searchExercise_container > h1 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
@@ -179,4 +180,43 @@ a {
 .bodyParts_container > h2 > span {
   color: var(--sec-color);
   font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+@media only screen and (max-width: 600px) {
+  .searchExercise_form > input[type="text"] {
+    width: 90%;
+  }
+  /* Body Parts */
+  .bodyParts_container > h2 {
+    font-size: 1.3rem;
+  }
+  .searchExercise_container > h1 {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+  }
+  .bodyParts > li {
+    margin: 0.5rem 1rem;
+  }
+  .exerciseDetail-row {
+    flex-direction: column;
+  }
+  .exerciseDetail-col {
+    width: 100%;
+  }
+  .exerciseDetails-img {
+    width: 100%;
+  }
+  .exercise_videos {
+    flex-direction: column;
+  }
+  .exercise_vid_img {
+    /* max-height: 200px; */
+    width: 100%;
+  }
+  .single-exercise-card {
+    /* width: 90vw; */
+  }
+  .single_gif {
+    width: 90%;
+  }
 }

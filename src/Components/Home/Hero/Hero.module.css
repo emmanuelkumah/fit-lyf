@@ -32,9 +32,10 @@
   font-size: 1.4rem;
   font-family: "Edu VIC WA NT Beginner", cursive;
   color: var(--sec-color);
+  margin-bottom: 1rem;
 }
 .btn-container {
-  margin-top: 2.5rem;
+  margin-top: 3rem;
 }
 .btn-container > button {
   border: none;
@@ -166,10 +167,12 @@
     padding-top: 0.5rem;
   }
   .hero_content > h2 {
+    padding-top: 1rem;
     padding-right: 0;
     line-height: 1.1;
     margin: 0;
   }
+
   .hero_content > p {
     padding-right: 0;
   }

@@ -7,6 +7,7 @@ import { BiDumbbell } from "react-icons/bi";
 import { AiFillHeart } from "react-icons/ai";
 import heroImg from "../../../assets/heroImg.png";
 import heroImgpattern from "../../../assets/heroImgBack.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [isMenuClicked] = useContext(NavContext);
@@ -17,6 +18,7 @@ const Hero = () => {
         className={`${classes["hero_container"]} ${
           isMenuClicked && classes["hero_shift"]
         }`}
+        id="home"
       >
         <section className={classes["hero_col"]}>
           <div className={classes["hero_content"]}>
@@ -31,12 +33,12 @@ const Hero = () => {
             </p>
             <p>It's time to get into the best shape of your life</p>
           </div>
-          <div className={classes["btn-container"]}>
+          <Link className={classes["btn-container"]} to="/exercises">
             <button>Get Started</button>
             <span>
               <BsFillPlayFill />
             </span>
-          </div>
+          </Link>
         </section>
         <section className={classes["hero_col"]}>
           <div className={classes["stats_container"]}>
