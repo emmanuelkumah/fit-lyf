@@ -5,6 +5,7 @@ import SearchExercise from "./SearchExercise";
 import SingleExercise from "./SingleExercise";
 import Pagination from "@mui/material/Pagination";
 import { fetchData, exerciseOptions } from "../../utils/fetchData";
+import Logo from "../Nav/Logo";
 
 const Exercises = () => {
   const [exercises, setExercises] = useState([]);
@@ -54,10 +55,10 @@ const Exercises = () => {
 
   return (
     <>
+      <Logo />
       <SearchExercise setExercises={setExercises} />
       <ExercisesBodyParts setSelectBodyPart={setSelectBodyPart} />
       <section>
-        <h2>Exercises</h2>
         <div className={classes["exercises_lists_container"]}>
           {currentExercisesLists}
           {exercises.length > 9 && (

@@ -1,9 +1,10 @@
 import { useContext } from "react";
 import { NavContext } from "../Context";
 import { AiOutlineMenuFold } from "react-icons/ai";
-import { CgGym } from "react-icons/cg";
+
 import Nav from "./Nav";
 import classes from "./Nav.module.css";
+import Logo from "./Logo";
 
 function NavBrand() {
   const [, setIsMenuClicked] = useContext(NavContext);
@@ -16,10 +17,7 @@ function NavBrand() {
       <div className={classes.navBrand}>
         <AiOutlineMenuFold className={classes.openIcon} onClick={openNavMenu} />
 
-        <h1>
-          <CgGym className={classes["gym_icon-main"]} />
-          Fit <span className={classes["logo_brand"]}>Lyf</span>
-        </h1>
+        <Logo />
       </div>
       <Nav />
     </>

@@ -33,7 +33,9 @@ const ExercisesBodyParts = ({ setSelectBodyPart }) => {
   return (
     <>
       <section className={classes["bodyParts_container"]}>
-        <h2>Body Parts</h2>
+        <h2>
+          Filter Exercise by <span>Body Parts</span>
+        </h2>
 
         <ScrollMenu>
           <ul className={classes["bodyParts"]}>{bodyPartList}</ul>

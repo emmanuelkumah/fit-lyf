@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { fetchData, exerciseOptions } from "../../utils/fetchData";
+import classes from "./Exercises.module.css";
 
 const SearchExercise = ({ setExercises }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -30,9 +31,14 @@ const SearchExercise = ({ setExercises }) => {
   };
   return (
     <>
-      <section>
-        <h1>Awesome exercise you should do </h1>
-        <form onSubmit={(e) => handleFormSumbit(e)}>
+      <section className={classes["searchExercise_container"]}>
+        <h1>
+          Kick start a <span>fit life</span> with awesome <span>exercises</span>{" "}
+        </h1>
+        <form
+          onSubmit={(e) => handleFormSumbit(e)}
+          className={classes["searchExercise_form"]}
+        >
           <input
             type="text"
             placeholder="Enter the exercise to search for "
